@@ -1,4 +1,4 @@
-import { ParamObjectType } from './param-object-type'
+import type { ParamObjectType } from './param-object-type'
 
 export const getParamValues = <T extends string>(
   url: T,

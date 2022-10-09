@@ -1,4 +1,4 @@
-import { String, Union, List } from 'ts-toolbelt'
+import type { String, Union, List } from 'ts-toolbelt'
 
 type DynamicSegmentPattern = `[${string}]`
 type DynamicOptionalSegmentPattern = `[[${string}]]`

@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^13.1.0
   '@commitlint/config-conventional': ^13.1.0
+  '@tsconfig/next': ^1.0.3
   '@types/jest': ^27.0.1
   '@typescript-eslint/eslint-plugin': ^4.31.1
   '@typescript-eslint/parser': ^4.31.1
@@ -15,7 +16,7 @@ specifiers:
   prettier: ^2.4.0
   ts-jest: ^27.0.5
   ts-toolbelt: ^9.6.0
-  typescript: ^4.4.3
+  typescript: ^4.8.4
 
 dependencies:
   ts-toolbelt: 9.6.0
@@ -23,6 +24,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 13.2.1
   '@commitlint/config-conventional': 13.2.0
+  '@tsconfig/next': 1.0.3
   '@types/jest': 27.5.2
   '@typescript-eslint/eslint-plugin': 4.33.0_k4l66av2tbo6kxzw52jzgbfzii
   '@typescript-eslint/parser': 4.33.0_3rubbgt5ekhqrcgx4uwls3neim
@@ -842,6 +844,10 @@ packages:
   /@tootallnate/once/1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
+    dev: true
+
+  /@tsconfig/next/1.0.3:
+    resolution: {integrity: sha512-GbRRYrVMVHGwZLwCdaksOhAVPcYgUZGP3UhGnIxW54IpTynMY72bWWlUm1Jwh6BcJ66boYeQENpZ5CsEpltUnQ==}
     dev: true
 
   /@types/babel__core/7.1.19:
