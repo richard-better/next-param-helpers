@@ -11,9 +11,9 @@ export type SegmentObj<TSegment extends string> =
     ? { [k in cleanSegment]: string }
     : EmptyObject
 
-export type PageParamObject<S extends string> =
-  S extends `${infer Head}/${infer Tail}`
+export type PageParamObject<TPagePath extends string> =
+  TPagePath extends `${infer Head}/${infer Tail}`
     ? SegmentObj<Head> & PageParamObject<Tail>
-    : S extends '/'
+    : TPagePath extends '/'
     ? EmptyObject
-    : SegmentObj<S>
+    : SegmentObj<TPagePath>
