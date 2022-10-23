@@ -50,9 +50,7 @@
   "bugs": {
     "url": "https://github.com/richard-better/next-param-helpers/issues"
   },
-  "dependencies": {
-    "ts-toolbelt": "^9.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",

@@ -15,12 +15,8 @@ specifiers:
   pinst: ^2.1.6
   prettier: ^2.4.0
   ts-jest: ^27.0.5
-  ts-toolbelt: ^9.6.0
   tsd: ^0.24.1
   typescript: ^4.8.4
-
-dependencies:
-  ts-toolbelt: 9.6.0
 
 devDependencies:
   '@commitlint/cli': 13.2.1
@@ -3886,10 +3882,6 @@ packages:
       typescript: 4.8.4
       yn: 3.1.1
     dev: true
-
-  /ts-toolbelt/9.6.0:
-    resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}
-    dev: false
 
   /tsd/0.24.1:
     resolution: {integrity: sha512-sD+s81/2aM4RRhimCDttd4xpBNbUFWnoMSHk/o8kC8Ek23jljeRNWjsxFJmOmYLuLTN9swRt1b6iXfUXTcTiIA==}
