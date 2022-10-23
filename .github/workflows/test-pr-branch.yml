@@ -1,24 +1,9 @@
 name: Test
 
 on:
-  push:
-    paths-ignore:
-      - 'docs/**'
-      - 'README.md'
-      - 'LICENSE'
-      - '.editorconfig'
-    branches:
-      - main
-      - master
   pull_request:
-    paths-ignore:
-      - 'docs/**'
-      - 'README.md'
-      - 'LICENSE'
-      - '.editorconfig'
     branches:
       - main
-      - master
 
 jobs:
   test:
@@ -40,3 +25,5 @@ jobs:
       - run: pnpm run build
       - run: pnpm run lint
       - run: pnpm run test
+      - run: changeset status --since=main
+        name: 'Check if a changeset was added to the PR'
