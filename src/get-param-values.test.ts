@@ -1,6 +1,6 @@
 import { getParamValues } from './get-param-values'
 
-test.each<[string, string, Record<string, string | string[]>]>([
+test.skip.each<[string, string, Record<string, string | string[]>]>([
   ['/pattern/[id]', '/pattern/12345', { id: '12345' }],
   ['/pattern/[id]/[[...slug]]', '/pattern/12345', { id: '12345' }],
   [
