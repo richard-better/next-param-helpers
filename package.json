@@ -14,7 +14,7 @@
     "build:ts": "tsc -p config/tsconfig.build.json",
     "clean": "node tools/cleanup",
     "package": "pnpm run build && pnpm pack",
-    "publish": "changesets publish",
+    "publish": "changeset publish",
     "release": "npm-run-all --serial package publish",
     "addscope": "node tools/packagejson name @richard-better/next-param-helpers",
     "lint": " pnpm run lint:check",
