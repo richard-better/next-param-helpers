@@ -15,11 +15,18 @@
     "build:copy": "cp src/index.d.ts src/index.js  src/param-object-type.d.ts  dist",
     "clean": "node tools/cleanup",
     "package": "pnpm run build && pnpm pack",
-    "test": "pnpm run test:js && pnpm run test:types",
-    "test:js": "jest --no-cache --runInBand",
-    "test:types": "tsd -f src/param-object-type.test-d.ts",
-    "test:cov": "jest --coverage --no-cache --runInBand",
-    "addscope": "node tools/packagejson name @richard-better/next-param-helpers"
+    "addscope": "node tools/packagejson name @richard-better/next-param-helpers",
+    "lint": " pnpm run lint:check",
+    "lint:check": "npm-run-all --parallel lint:check:*",
+    "lint:check:js+ts": "eslint --ext .js,.jsx,.mjs,.ts,.tsx,.mts --ignore-path .gitignore .",
+    "lint:check:format": "prettier --check .",
+    "lint:check:types": "tsc --noEmit",
+    "lint:fix": "npm-run-all --serial lint:fix:*",
+    "lint:fix:js+ts": "pnpm run lint:js+ts --fix",
+    "lint:fix:format": "prettier --write .",
+    "test": "npm-run-all --parallel test:js+ts test:types",
+    "test:js+ts": "jest --coverage  --no-cache --runInBand",
+    "test:types": "tsd -f src/param-object-type.test-d.ts"
   },
   "publishConfig": {
     "access": "public"
@@ -50,7 +57,6 @@
   "bugs": {
     "url": "https://github.com/richard-better/next-param-helpers/issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
@@ -63,6 +69,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",
     "jest": "^27.2.0",
+    "npm-run-all": "^4.1.5",
     "pinst": "^2.1.6",
     "prettier": "^2.4.0",
     "ts-jest": "^27.0.5",
