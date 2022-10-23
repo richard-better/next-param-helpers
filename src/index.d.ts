@@ -1,10 +1,10 @@
-import type { ParamObjectType } from './param-object-type'
+import type { PageParamObject } from './page-param-object'
 
 declare const getParamValues: <T extends string>(
   url: T,
   params: Record<string, string>
-) => ParamObjectType<T>
+) => PageParamObject<T>
 
 export { getParamValues }
 
-export type { ParamObjectType }
+export type { PageParamObject }
