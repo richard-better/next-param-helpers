@@ -36,17 +36,10 @@
     "dist"
   ],
   "keywords": [
-    "example",
+    "next",
+    "nextjs",
     "typescript",
-    "npm",
-    "package",
-    "sample",
-    "boilerplate",
-    "starter",
-    "demo",
-    "cjs",
-    "esm",
-    "umd"
+    "regex"
   ],
   "author": "Richard B <git@richardb.me>",
   "license": "MIT",
