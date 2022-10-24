@@ -1,5 +1,5 @@
 // Copyright (c) 2022 Vercel, Inc, File contents from https://github.com/vercel/next.js/blob/ceb07ff00c59e95b4473a945ecba566471ff0d94/packages/next/shared/lib/router/utils/route-regex.ts
-import { escapeStringRegexp } from '../../escape-regexp'
+import { escapeStringRegexp } from './escape-regexp'
 import { removeTrailingSlash } from './remove-trailing-slash'
 
 export interface Group {
