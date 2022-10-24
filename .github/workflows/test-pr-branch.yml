@@ -27,5 +27,3 @@ jobs:
       - run: pnpm run build
       - run: pnpm run lint
       - run: pnpm run test
-      - run: pnpm changeset status --since=main
-        name: 'Check if a changeset was added to the PR'
