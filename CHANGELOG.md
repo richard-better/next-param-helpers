@@ -1,5 +1,11 @@
 # next-param-helpers
 
+## 0.1.0
+
+### Minor Changes
+
+- 4562d98: Implement path matching functionality using helpers from Next.js
+
 ## 0.0.1
 
 ### Patch Changes
