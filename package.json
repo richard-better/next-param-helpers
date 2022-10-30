@@ -52,6 +52,7 @@
     "url": "https://github.com/richard-better/next-param-helpers/issues"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.25.1",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@tsconfig/next": "^1.0.3",
@@ -69,8 +70,5 @@
     "ts-jest": "^29.0.3",
     "tsd": "^0.24.1",
     "typescript": "^4.8.4"
-  },
-  "dependencies": {
-    "@changesets/cli": "^2.25.1"
   }
 }
