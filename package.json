@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "packageManager": "pnpm@7.13.3",
+  "packageManager": "pnpm@7.14.1",
   "scripts": {
     "_postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
