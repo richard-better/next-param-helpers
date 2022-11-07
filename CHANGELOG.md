@@ -1,5 +1,11 @@
 # next-param-helpers
 
+## 0.1.1
+
+### Patch Changes
+
+- 9758a54: Updated development dependencies
+
 ## 0.1.0
 
 ### Minor Changes
